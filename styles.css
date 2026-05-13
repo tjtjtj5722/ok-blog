@@ -1,13 +1,14 @@
 :root {
-  --ink: #17212b;
-  --muted: #667382;
-  --line: #dfe5ea;
-  --paper: #fbfbf8;
+  --ink: #171b23;
+  --muted: #6b7280;
+  --line: #ddd6c8;
+  --paper: #f8f4ec;
   --surface: #ffffff;
-  --sage: #5d7c63;
-  --navy: #203650;
-  --rust: #b45f43;
-  --gold: #c59b47;
+  --sage: #465c55;
+  --navy: #1e2c3d;
+  --rust: #9f4f37;
+  --gold: #c49a46;
+  --oxblood: #5b2524;
   --shadow: 0 18px 50px rgba(23, 33, 43, 0.12);
 }
 
@@ -24,6 +25,18 @@ body {
     "Segoe UI", sans-serif;
 }
 
+body::before {
+  position: fixed;
+  inset: 0;
+  z-index: -1;
+  pointer-events: none;
+  content: "";
+  background-image:
+    linear-gradient(rgba(23, 27, 35, 0.035) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(23, 27, 35, 0.03) 1px, transparent 1px);
+  background-size: 44px 44px;
+}
+
 button,
 input {
   font: inherit;
@@ -38,8 +51,8 @@ input {
   justify-content: space-between;
   gap: 24px;
   padding: 18px clamp(18px, 4vw, 56px);
-  background: rgba(251, 251, 248, 0.92);
-  border-bottom: 1px solid rgba(223, 229, 234, 0.8);
+  background: rgba(248, 244, 236, 0.94);
+  border-bottom: 1px solid rgba(221, 214, 200, 0.9);
   backdrop-filter: blur(14px);
 }
 
@@ -58,7 +71,7 @@ input {
   width: 42px;
   height: 42px;
   place-items: center;
-  background: var(--ink);
+  background: var(--oxblood);
   color: #fff;
   border-radius: 8px;
   letter-spacing: 0;
@@ -85,14 +98,14 @@ input {
   display: grid;
   align-items: end;
   overflow: hidden;
-  background: var(--navy);
+  background: var(--ink);
 }
 
 .hero-image {
   position: absolute;
   inset: 0;
   background-image:
-    linear-gradient(90deg, rgba(23, 33, 43, 0.84), rgba(23, 33, 43, 0.34)),
+    linear-gradient(90deg, rgba(23, 27, 35, 0.9), rgba(30, 44, 61, 0.46)),
     url("https://images.unsplash.com/photo-1450101499163-c8848c66ca85?auto=format&fit=crop&w=1800&q=82");
   background-position: center;
   background-size: cover;
@@ -126,11 +139,50 @@ p {
 }
 
 h1 {
-  max-width: 11ch;
+  max-width: 12ch;
   margin: 0;
   font-size: clamp(3rem, 7vw, 6.8rem);
   line-height: 0.98;
   letter-spacing: 0;
+}
+
+.briefing-band {
+  position: relative;
+  z-index: 2;
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 1px;
+  width: min(1040px, calc(100% - 36px));
+  margin: -42px auto 0;
+  overflow: hidden;
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  background: var(--line);
+  box-shadow: var(--shadow);
+}
+
+.briefing-band article {
+  min-height: 148px;
+  padding: 24px;
+  background: rgba(255, 255, 255, 0.96);
+}
+
+.briefing-band span {
+  display: block;
+  margin-bottom: 12px;
+  color: var(--gold);
+  font-weight: 900;
+}
+
+.briefing-band strong {
+  display: block;
+  font-size: 1.18rem;
+}
+
+.briefing-band p {
+  margin: 10px 0 0;
+  color: var(--muted);
+  line-height: 1.62;
 }
 
 h2 {
@@ -193,7 +245,7 @@ h2 {
   grid-template-columns: minmax(240px, 0.8fr) minmax(0, 1.2fr);
   gap: 32px;
   align-items: end;
-  padding: 62px 0 42px;
+  padding: 76px 0 42px;
 }
 
 .topic-filters {
@@ -219,8 +271,8 @@ h2 {
 
 .topic-chip.active,
 .topic-chip:hover {
-  border-color: var(--sage);
-  background: var(--sage);
+  border-color: var(--oxblood);
+  background: var(--oxblood);
   color: #fff;
 }
 
@@ -257,7 +309,15 @@ h2 {
   background: var(--surface);
   border: 1px solid var(--line);
   border-radius: 8px;
-  box-shadow: 0 10px 24px rgba(23, 33, 43, 0.06);
+  box-shadow: 0 12px 26px rgba(23, 27, 35, 0.07);
+  transition:
+    transform 180ms ease,
+    box-shadow 180ms ease;
+}
+
+.post-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 18px 34px rgba(23, 27, 35, 0.11);
 }
 
 .post-card img {
@@ -283,7 +343,7 @@ h2 {
 }
 
 .category {
-  color: var(--rust);
+  color: var(--oxblood);
   font-weight: 800;
 }
 
@@ -304,7 +364,7 @@ h2 {
 .post-link {
   margin-top: auto;
   padding-top: 20px;
-  color: var(--navy);
+  color: var(--oxblood);
   font-weight: 800;
   text-decoration: none;
 }
@@ -325,8 +385,8 @@ h2 {
 }
 
 .page-button[aria-current="page"] {
-  border-color: var(--navy);
-  background: var(--navy);
+  border-color: var(--oxblood);
+  background: var(--oxblood);
   color: #fff;
 }
 
@@ -342,7 +402,9 @@ h2 {
   align-items: center;
   margin-bottom: 64px;
   padding: clamp(28px, 5vw, 52px);
-  background: var(--ink);
+  background:
+    linear-gradient(135deg, rgba(91, 37, 36, 0.96), rgba(23, 27, 35, 0.98)),
+    var(--ink);
   color: #fff;
   border-radius: 8px;
 }
@@ -396,6 +458,10 @@ h2 {
 @media (max-width: 900px) {
   .topics-band,
   .newsletter {
+    grid-template-columns: 1fr;
+  }
+
+  .briefing-band {
     grid-template-columns: 1fr;
   }
 
