@@ -4,7 +4,7 @@ const posts = [
     category: "주거",
     date: "2026.05.13",
     read: "6분",
-    image: "https://images.unsplash.com/photo-1560518883-ce09059eeffa?auto=format&fit=crop&w=900&q=80",
+    image: "assets/images/housing-deposit.jpg",
     summary: "내용증명부터 임차권등기명령까지, 당황한 세입자가 순서대로 확인할 행동을 이야기처럼 풀었습니다."
   },
   {
@@ -12,7 +12,7 @@ const posts = [
     category: "주거",
     date: "2026.05.12",
     read: "5분",
-    image: "https://images.unsplash.com/photo-1494526585095-c41746248156?auto=format&fit=crop&w=900&q=80",
+    image: "assets/images/housing-register.jpg",
     summary: "근저당, 압류, 신탁이라는 단어가 계약서보다 먼저 보내는 위험 신호를 쉽게 읽어봅니다."
   },
   {
@@ -20,7 +20,7 @@ const posts = [
     category: "노동",
     date: "2026.05.11",
     read: "7분",
-    image: "https://images.unsplash.com/photo-1554224155-6726b3ff858f?auto=format&fit=crop&w=900&q=80",
+    image: "assets/images/wage-documents.jpg",
     summary: "임금체불 신고 전 모아둘 자료와 노동청 진정 흐름을 실제 대화 장면처럼 정리했습니다."
   },
   {
@@ -28,7 +28,7 @@ const posts = [
     category: "노동",
     date: "2026.05.10",
     read: "4분",
-    image: "https://images.unsplash.com/photo-1551836022-d5d88e9218df?auto=format&fit=crop&w=900&q=80",
+    image: "assets/images/part-time-work.jpg",
     summary: "1년, 주 15시간, 계속근로라는 세 가지 기준을 생활 예시로 가볍게 짚습니다."
   },
   {
@@ -36,7 +36,7 @@ const posts = [
     category: "가족",
     date: "2026.05.09",
     read: "8분",
-    image: "https://images.unsplash.com/photo-1521791055366-0d553872125f?auto=format&fit=crop&w=900&q=80",
+    image: "assets/images/inheritance-family.jpg",
     summary: "상속포기와 한정승인의 차이를 가족회의에서 바로 설명할 수 있을 만큼 쉽게 풀었습니다."
   },
   {
@@ -44,7 +44,7 @@ const posts = [
     category: "가족",
     date: "2026.05.08",
     read: "6분",
-    image: "https://images.unsplash.com/photo-1517245386807-bb43f82c33c4?auto=format&fit=crop&w=900&q=80",
+    image: "assets/images/divorce-assets.jpg",
     summary: "예금, 부동산, 보험, 퇴직금을 빠뜨리지 않도록 재산분할 준비표로 정리합니다."
   },
   {
@@ -52,7 +52,7 @@ const posts = [
     category: "교통",
     date: "2026.05.07",
     read: "6분",
-    image: "https://images.unsplash.com/photo-1503376780353-7e6692767b70?auto=format&fit=crop&w=900&q=80",
+    image: "assets/images/traffic-accident.jpg",
     summary: "치료비, 휴업손해, 위자료를 나눠 보며 보험사 제안을 읽는 법을 설명합니다."
   },
   {
@@ -60,7 +60,7 @@ const posts = [
     category: "교통",
     date: "2026.05.06",
     read: "5분",
-    image: "https://images.unsplash.com/photo-1449965408869-eaa3f722e40d?auto=format&fit=crop&w=900&q=80",
+    image: "assets/images/drunk-driving.jpg",
     summary: "형사처벌, 면허, 보험 문제가 한꺼번에 움직이는 구조를 한 장면씩 따라갑니다."
   },
   {
@@ -68,7 +68,7 @@ const posts = [
     category: "소비자",
     date: "2026.05.05",
     read: "5분",
-    image: "https://images.unsplash.com/photo-1516321318423-f06f85e504b3?auto=format&fit=crop&w=900&q=80",
+    image: "assets/images/used-market-fraud.jpg",
     summary: "채팅, 계좌, 상품글, 배송정보를 증거로 남기는 순서와 신고 전 체크포인트를 알려드립니다."
   },
   {
@@ -76,7 +76,7 @@ const posts = [
     category: "소비자",
     date: "2026.05.04",
     read: "4분",
-    image: "https://images.unsplash.com/photo-1517836357463-d25dfeac3438?auto=format&fit=crop&w=900&q=80",
+    image: "assets/images/gym-refund.jpg",
     summary: "위약금, 이용일수, 사은품 공제처럼 환불액을 줄이는 항목을 차근차근 따져봅니다."
   },
   {
@@ -84,7 +84,7 @@ const posts = [
     category: "창업",
     date: "2026.05.03",
     read: "7분",
-    image: "https://images.unsplash.com/photo-1497366754035-f200968a6e72?auto=format&fit=crop&w=900&q=80",
+    image: "assets/images/freelance-contract.jpg",
     summary: "검수, 수정 횟수, 지급일, 저작권 이전 시점을 계약 전에 선명하게 만드는 법을 봅니다."
   },
   {
@@ -92,7 +92,7 @@ const posts = [
     category: "창업",
     date: "2026.05.02",
     read: "6분",
-    image: "https://images.unsplash.com/photo-1556761175-b413da4baf72?auto=format&fit=crop&w=900&q=80",
+    image: "assets/images/business-closing.jpg",
     summary: "임대차, 직원, 미수금, 신고 문제를 폐업 전 체크리스트로 정리했습니다."
   }
 ];
@@ -140,7 +140,7 @@ function renderPosts() {
       .map(
         (post) => `
           <article class="post-card">
-            <img src="${post.image}" alt="" loading="lazy" />
+            <img src="${post.image}" alt="" />
             <div class="post-body">
               <div class="post-meta">
                 <span class="category">${post.category}</span>
