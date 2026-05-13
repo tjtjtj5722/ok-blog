@@ -1,0 +1,93 @@
+<!doctype html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>OK Blog | 생활법률을 쉽게</title>
+    <meta
+      name="description"
+      content="전세, 임금, 상속, 교통사고, 소비자 분쟁까지 일상에서 만나는 생활법률을 쉬운 언어로 정리한 OK Blog입니다."
+    />
+    <link rel="preconnect" href="https://images.unsplash.com" />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header class="site-header">
+      <a class="brand" href="#" aria-label="OK Blog 홈">
+        <span class="brand-mark">OK</span>
+        <span>Blog</span>
+      </a>
+      <nav class="top-nav" aria-label="주요 메뉴">
+        <a href="#posts">포스트</a>
+        <a href="#topics">주제</a>
+        <a href="#newsletter">구독</a>
+      </nav>
+    </header>
+
+    <main>
+      <section class="hero" aria-labelledby="hero-title">
+        <div class="hero-image" role="img" aria-label="법률 문서와 노트가 놓인 책상"></div>
+        <div class="hero-content">
+          <p class="eyebrow">생활법률 가이드</p>
+          <h1 id="hero-title">모르면 어려운 법, 알면 내 편이 됩니다.</h1>
+          <p class="hero-copy">
+            전세금, 임금체불, 상속, 교통사고, 소비자 분쟁처럼 갑자기 마주치는 법률 문제를
+            일상 언어와 확인 가능한 근거 중심으로 정리합니다.
+          </p>
+          <form class="hero-search" role="search" aria-label="포스트 검색">
+            <input id="searchInput" type="search" placeholder="전세, 임금체불, 상속..." />
+            <button type="submit">검색</button>
+          </form>
+        </div>
+      </section>
+
+      <section class="topics-band" id="topics" aria-labelledby="topics-title">
+        <div class="section-heading">
+          <p class="eyebrow">빠른 주제 탐색</p>
+          <h2 id="topics-title">지금 내 상황에 가까운 문제부터</h2>
+        </div>
+        <div class="topic-filters" aria-label="주제 필터">
+          <button class="topic-chip active" data-topic="전체">전체</button>
+          <button class="topic-chip" data-topic="주거">주거</button>
+          <button class="topic-chip" data-topic="노동">노동</button>
+          <button class="topic-chip" data-topic="가족">가족</button>
+          <button class="topic-chip" data-topic="교통">교통</button>
+          <button class="topic-chip" data-topic="소비자">소비자</button>
+          <button class="topic-chip" data-topic="창업">창업</button>
+        </div>
+      </section>
+
+      <section class="posts-section" id="posts" aria-labelledby="posts-title">
+        <div class="posts-toolbar">
+          <div>
+            <p class="eyebrow">최신 포스트</p>
+            <h2 id="posts-title">생활 속 법률 체크리스트</h2>
+          </div>
+          <p id="resultCount" class="result-count" aria-live="polite"></p>
+        </div>
+
+        <div id="postGrid" class="post-grid" aria-live="polite"></div>
+        <nav id="pagination" class="pagination" aria-label="포스트 페이지"></nav>
+      </section>
+
+      <section class="newsletter" id="newsletter" aria-labelledby="newsletter-title">
+        <div>
+          <p class="eyebrow">OK Letter</p>
+          <h2 id="newsletter-title">이번 주에 알아둘 생활법률</h2>
+          <p>새 판례와 개정 법령을 생활 사례 중심으로 묶어 전해드립니다.</p>
+        </div>
+        <form class="newsletter-form">
+          <input type="email" placeholder="email@example.com" aria-label="이메일 주소" />
+          <button type="submit">구독</button>
+        </form>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <p>OK Blog</p>
+      <p>법률정보 안내용 콘텐츠이며, 구체적 사건은 전문가 상담이 필요할 수 있습니다.</p>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>
