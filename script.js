@@ -1,5 +1,40 @@
 const posts = [
   {
+    title: "카페 알바를 1년 채웠는데 '파트타이머는 퇴직금 없다'고 하면?",
+    category: "노동",
+    date: "2026.06.03",
+    read: "5분",
+    image: "assets/images/part-time-work.jpg",
+    summary:
+      "아르바이트라도 1년 이상 계속 일했고 4주 평균 주 15시간 이상이면 퇴직금 대상이 될 수 있다는 기준을 사례형으로 정리했습니다.",
+    scenario:
+      "주 4일, 하루 4시간씩 카페에서 일한 대학생이 1년을 채우고 그만두려는데 사장이 '알바는 퇴직금이 없다'고 말하는 상황입니다.",
+    checklist: [
+      "근무 시작일과 마지막 근무일을 기준으로 계속근로기간이 1년 이상인지 먼저 계산합니다.",
+      "최근 4주 기준으로 1주 소정근로시간 평균이 15시간 이상인지 근무표와 계약서로 확인합니다.",
+      "근로계약서, 급여명세서, 출근기록, 통장 입금내역을 한 폴더에 모아 둡니다.",
+      "퇴직 뒤 14일이 지나도 지급이 없고 연장 합의도 없다면 관할 고용노동지청 진정 준비를 시작합니다."
+    ],
+    nextAction:
+      "근무표와 급여내역으로 주 15시간 이상 근무 사실을 먼저 계산한 뒤, 퇴직일과 지급기한 14일을 적어 사업주에게 문자로 남기세요.",
+    sourceNote:
+      "근로자퇴직급여 보장법은 1년 미만 근로자와 4주 평균 주 15시간 미만 근로자를 제외하고, 퇴직금은 1년에 대해 30일분 이상의 평균임금을 퇴직 후 14일 내 지급하도록 정합니다.",
+    sources: [
+      {
+        label: "국가법령정보센터 · 근로자퇴직급여 보장법 제4조",
+        url: "https://www.law.go.kr/lsLawLinkInfo.do?chrClsCd=010202&lsJoLnkSeq=900196650"
+      },
+      {
+        label: "찾기쉬운 생활법령 · 퇴직금 지급",
+        url: "https://easylaw.go.kr/CSP/CnpClsMain.laf?ccfNo=3&cciNo=2&cnpClsNo=1&csmSeq=999&menuType=cnpcls&popMenu=ov"
+      },
+      {
+        label: "찾기쉬운 생활법령 · 퇴직급여 설정 Q&A",
+        url: "https://www.easylaw.go.kr/CSP/OnhunqueansInfoRetrieve.laf?onhunqnaAstSeq=82&onhunqueSeq=4841"
+      }
+    ]
+  },
+  {
     title: "퇴사했는데 월급이 2주째 안 들어온다면, 언제 바로 신고할까?",
     category: "노동",
     date: "2026.05.31",
